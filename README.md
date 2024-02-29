@@ -1,10 +1,12 @@
-## Hospital-Inpatient-Information-System
+# Hospital-Inpatient-Information-System
 
-# Project Requirements:
+![The San Juan Mountains are beautiful!](./images/Analysis.png "San Juan Mountains")
+
+## Project Requirements:
 
 No-Where-To-Be-Found Hospital (NWTBF) hires your team to develop a “Hospital Inpatient Information System” (HIIS). Your deliverables should contain an ERD and the complete SQL script. Your deliverables have to fulfill ALL of the following functional and non-functional requirements. 
 
-# Functional Requirements: 
+## Functional Requirements: 
 
 *	Generate an ERD based on the requirements. 
 *	It is quite possible that different people share the same first and last names. Thus it is not acceptable to use a person’s first   and last name to identify a person. 
@@ -25,7 +27,7 @@ No-Where-To-Be-Found Hospital (NWTBF) hires your team to develop a “Hospital I
 *	For each department, list the department name, its head doctor’s ID, name and his specialties. 
 *	For each department, list the department name, all of its doctors’ IDs, names and the number of each doctor’s specialties. 
 
-# Non-Functional Requirements: 
+## Non-Functional Requirements: 
 
 *	Your HIIS design should try to reduce unnecessary redundancies as much as possible. 
 *	The ERD can be originally created by MS Visio or similar software.
