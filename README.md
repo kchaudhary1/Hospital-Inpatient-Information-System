@@ -1,6 +1,6 @@
 # Hospital-Inpatient-Information-System
 
-![The San Juan Mountains are beautiful!](./images/Analysis.png "San Juan Mountains")
+![The San Juan Mountains are beautiful!](./images/ERD.png "San Juan Mountains")
 
 ## Project Requirements:
 
