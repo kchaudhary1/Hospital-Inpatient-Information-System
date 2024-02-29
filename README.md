@@ -39,3 +39,25 @@ No-Where-To-Be-Found Hospital (NWTBF) hires your team to develop a “Hospital I
 *	You may apply your best assumptions to determine whether a field (column) is mandatory or optional. 
 *	Your assumptions have to be intuitively correct. 
 *	The script has to include necessary and illustrative documentations in order to facilitate your client to understand your script.
+
+## Database Schema
+
+Patient:  Patient_ID (PK), PL_name, PF_Name, DOB, P_Phone, P_Email
+Admission:  Admission_ID (PK), Patient_ID (FK), EContact_ID (FK), ADoctor_ID (FK),  Admit_Date, Discharge_Date
+Emergency_Contact:  EContact_ID (PK), EF_Name, EL_Name, E_Phone, E_Email, Relationship
+Doctor:  Doctor_ID (PK), Department_ID (FK), DF_Name, DL_Name
+Doctor_Specialty:  D_SID (PK), Specialty_ID (FK), Doctor_ID (FK)
+Specialty:  Specialty_ID (PK), S_Name
+Department: Department_ID (PK), Head_Doctor_ID (FK), Dept_Name, Bldg_Name, Floor
+Treatment:  Treatment_ID (PK), T_Description
+Admission_Treatments:  A_TID (PK), Treatment_ID (FK), Admission_ID (FK), TDoctor_id (FK), T_Date
+
+Assumptions
+
+1.	Patients cannot exist in the database without their first admission.  So, each admission is associated with 1 and only 1 patient, but a patient must have 1 or more admissions.
+2.	For each admission, only one doctor is responsible for the patient during their entire admission.
+3.	Each doctor can perform 1 or more treatments.  Each treatment has only 1 doctor who is responsible.
+4.	Each doctor can have any number of specialties.  Every doctor has at least one specialty.
+5.	Each Head_Doctor can only be the head doctor of one department.
+6.	Each department must have at least one doctor.
+
